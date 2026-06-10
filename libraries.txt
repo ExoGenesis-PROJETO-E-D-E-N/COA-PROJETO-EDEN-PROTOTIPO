@@ -1,0 +1,6 @@
+# Wokwi Library Manager
+# Projeto E.D.E.N — ExoGenesis · FIAP GS 2026
+
+DHT sensor library
+LiquidCrystal I2C
+MPU6050
