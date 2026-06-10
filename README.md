@@ -124,7 +124,7 @@ MPU6050
 Todos os 8 cenários de missão foram validados com sucesso na simulação:
 
 | # | Condição | Fase Esperada | 
-|---|---|---|---|
+|---|---|---|
 | 1 | Todos os sensores normais | Missão Nominal |
 | 2 | LDR > 3000 (escuro) | Zona de Eclipse | 
 | 3 | Temperatura > 60°C | Alerta — TEMP+:RESFRIANDO | 
