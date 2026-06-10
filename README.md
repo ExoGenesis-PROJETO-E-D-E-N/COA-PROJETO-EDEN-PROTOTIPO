@@ -1,4 +1,4 @@
-# 🌿 Projeto E.D.E.N
+#  Projeto E.D.E.N
 ### Ecological Development in Exo-Environments
 
 > Sistema IoT embarcado para monitoramento de biocápsula botânica orbital simulada.  
@@ -6,7 +6,7 @@
 
 ---
 
-## 👥 Integrantes
+## Integrantes
 
 | Nome | RM |
 |---|---|
@@ -18,7 +18,7 @@
 
 ---
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 O E.D.E.N parte de uma hipótese científica: a exposição controlada de espécimes vegetais da Mata Atlântica à microgravidade e à radiação cósmica pode induzir adaptações fisiológicas que aumentem sua resiliência a condições climáticas extremas aqui na Terra.
 
@@ -28,7 +28,7 @@ Para que esse experimento seja viável, as condições internas da biocápsula p
 
 ---
 
-## 🔧 Hardware Utilizado
+##  Hardware Utilizado
 
 | Componente | Função | Interface / Pino |
 |---|---|---|
@@ -46,7 +46,7 @@ Para que esse experimento seja viável, as condições internas da biocápsula p
 
 ---
 
-## ⚙️ Fases Operacionais
+## Fases Operacionais
 
 O sistema classifica continuamente o estado da missão em 4 fases, em ordem decrescente de prioridade:
 
@@ -68,7 +68,7 @@ O sistema classifica continuamente o estado da missão em 4 fases, em ordem decr
 
 ---
 
-## 💡 Decisões Técnicas
+## Decisões Técnicas
 
 **1. Controle não-bloqueante com `millis()`**  
 O loop principal usa `millis()` no lugar de `delay()`, permitindo que leitura de sensores (2s), rotação do LCD (3s), buzzer e pisca do LED azul operem simultaneamente sem travar o sistema.
@@ -87,7 +87,7 @@ A função `evaluatePhase()` verifica as fases em ordem decrescente de gravidade
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 eden-gs2026/
@@ -100,7 +100,7 @@ eden-gs2026/
 
 ---
 
-## 📚 Bibliotecas
+## Bibliotecas
 
 ```
 DHT sensor library
@@ -110,12 +110,12 @@ MPU6050
 
 ---
 
-## 🔗 Links
+## Links
 
 | Recurso | Link |
 |---|---|
-| 🔌 Simulação no Wokwi | [wokwi.com/projects/465840600415942657](https://wokwi.com/projects/465840600415942657) |
-| 🎥 Vídeo no YouTube | *(adicionar link)* |
+| [Simulação no Wokwi](wokwi.com/projects/465840600415942657](https://wokwi.com/projects/465840600415942657) |  
+| [Vídeo no YouTube](https://youtu.be/-6Ov3c38Vsc) |  
 
 ---
 
@@ -125,14 +125,14 @@ Todos os 8 cenários de missão foram validados com sucesso na simulação:
 
 | # | Condição | Fase Esperada | Status |
 |---|---|---|---|
-| 1 | Todos os sensores normais | Missão Nominal | ✅ |
-| 2 | LDR > 3000 (escuro) | Zona de Eclipse | ✅ |
-| 3 | Temperatura > 60°C | Alerta — TEMP+:RESFRIANDO | ✅ |
-| 4 | Umidade < 40% | Alerta — UMID-: IRRIGANDO | ✅ |
-| 5 | Vibração > 2,5g | Alerta — VIBR: ESTABILIZ. | ✅ |
-| 6 | Temperatura < −5°C | Evacuação — FALHA TERMICA | ✅ |
-| 7 | Vibração > 3,4g | Evacuação — DANO ESTRUTURAL | ✅ |
-| 8 | Umidade > 90% | Evacuação — COLAPSO HIDRICO | ✅ |
+| 1 | Todos os sensores normais | Missão Nominal | 
+| 2 | LDR > 3000 (escuro) | Zona de Eclipse | 
+| 3 | Temperatura > 60°C | Alerta — TEMP+:RESFRIANDO | 
+| 4 | Umidade < 40% | Alerta — UMID-: IRRIGANDO | 
+| 5 | Vibração > 2,5g | Alerta — VIBR: ESTABILIZ. | 
+| 6 | Temperatura < −5°C | Evacuação — FALHA TERMICA | 
+| 7 | Vibração > 3,4g | Evacuação — DANO ESTRUTURAL | 
+| 8 | Umidade > 90% | Evacuação — COLAPSO HIDRICO | 
 
 ---
 
