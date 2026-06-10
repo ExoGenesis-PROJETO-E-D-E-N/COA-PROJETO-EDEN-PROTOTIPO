@@ -112,8 +112,8 @@ MPU6050
 
 ## Links
 
-| Recurso | Link |
-|---|---|
+| Recurso | 
+|---|
 | [Simulação no Wokwi](https://wokwi.com/projects/465840600415942657) |  
 | [Vídeo no YouTube](https://youtu.be/-6Ov3c38Vsc) |  
 
